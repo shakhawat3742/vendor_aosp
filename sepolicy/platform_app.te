@@ -19,3 +19,6 @@ allow platform_app exfat:dir { rw_dir_perms create_dir_perms };
 allow platform_app exfat:file { rw_file_perms create_file_perms };
 allow platform_app ntfs:dir { rw_dir_perms create_dir_perms };
 allow platform_app ntfs:file { rw_file_perms create_file_perms };
+
+# Allow NFC service to be found
+allow platform_app nfc_service:service_manager find;

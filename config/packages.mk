@@ -12,3 +12,8 @@ PRODUCT_PACKAGES += \
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
     librsjni
+
+ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
+PRODUCT_PACKAGES += \
+    Updates
+endif

@@ -11,13 +11,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Stk
 
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -9,3 +9,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
 
+# Fingerprint
+TARGET_PRODUCT_SHORT := $(CUSTOM_BUILD)
+TARGET_PRODUCT_SHORT := $(subst aosp_,,$(TARGET_PRODUCT_SHORT))
+ROM_FINGERPRINT := PixelExperience/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +%Y%m%d.%H:%M)
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.pixelexperience.fingerprint=$(ROM_FINGERPRINT)

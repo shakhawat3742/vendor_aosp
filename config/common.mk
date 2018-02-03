@@ -55,6 +55,9 @@ include vendor/gapps/config.mk
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+# Themes
+include vendor/themes/config.mk
+
 # Packages
 include vendor/aosp/config/packages.mk
 
